@@ -15,7 +15,7 @@ settings = xbmcaddon.Addon(id=__scriptid__)
 
 main_url = "http://www.tusubtitulo.com/"
 subtitle_pattern1 = "<div id='version(\d+)' class='ssdiv'>(.+?)Versión(.+?)<span class='right traduccion'>(.+?)</div>(.+?)</div>"
-subtitle_pattern2 = "<li class='li-idioma'>(.+?)<b>(.+?)</b>(.+?)<li class='li-estado (.+?)</li>(.+?)<li class='descargar (.+?)</li>"
+subtitle_pattern2 = "<li class='li-idioma'>(.+?)<b>(.+?)</b>(.+?)<li class='li-estado (.+?)</li>(.+?)<li class='download (.+?)</li>"
 
 def log(module, msg):
 	xbmc.log((u"### [%s] - %s" % (module,msg)).encode('utf-8'), level=xbmc.LOGDEBUG)
